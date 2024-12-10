@@ -5,7 +5,7 @@ portfolio
 Welcome to my personal portfolio website! This website showcases my journey, skills, and projects as a web developer.
 
 ## 🌟 Live Preview  
-[Visit My Portfolio](<your-live-portfolio-link>)  
+[Visit My Portfolio](https://karishmatatwal05.github.io/portfolio-1.0/)  
 
 ## 📑 Table of Contents  
 - [About](#about)  
