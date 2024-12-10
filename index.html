@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="phone.css" media="screen and (max-width: 1300px)">
+    <script src="index.js"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@900&family=Poppins:wght@400;500;700;800&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700;800&family=Sorts+Mill+Goudy&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/51f17f962b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+ <nav id="navbar">
+
+     <ul id="sidemenu">
+        <li  class="items"><a href="#">Portfolio</a></li>
+           <li class="item"><a href="#">Home</a></li>
+            <li class="item"><a href="#about">About</a></li>
+            <li class="item"><a href="#thirdSection">Education</a></li>
+            <li class="item"><a href="#fourthSection">Skills</a></li>
+            <li class="item"><a href="#certification">Certifications</a></li>
+            <li class="item"><a href="#sixthSection">Projects</a></li>
+            <li class="item"><a href="#seventhSection">Contact</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+        </ul>
+        <i class="fas fa-bars" onclick="openmenu()"></i>
+    </nav>
+
+    <!-- home page -->
+    <div id="home">
+        <div class="container">
+            <p class="first-para">HEY! I AM</p>
+            <h1 class="main-heading">Karishma Tatwal</h1>
+            <p class="second-para">I'm a <span id="element">Frontend Developer</span></p>
+        </div>
+    </div>
+
+    <!-- about page -->
+    <div id="about">
+        <div class="leftSection">
+            <img src="images/myphoto.jpeg" alt="my photo">
+        </div>
+        <div class="rightSection">
+            <h3>About Me</h3>
+            <p class="my-desc">I am a 2025 graduate, pursuing B-Tech in Information Technology at Malwa Institute of Science and Technology,Indore. I am a person who always likes to learn something new. I have great interest in programming and web application.</p>
+            <p class="desc">Name:<span class="name">Karishma Tatwal</span></p>
+            <p class="desc">Date of birth:<span class="dob">August 05,2001</span></p>
+            <p class="desc">Address:<span class="address">Ujjain, Madhya Pradesh</span></p>
+            <p class="desc">Email:<span class="email">karishmatatwal2002@gmail.com</span></p>
+            <btn class="resume-btn"><a href="images/karishmaresume.pdf" target="_blank">Resume</a></btn>
+            </div>
+        </div>
+
+        <!-- education -->
+    <section id="thirdSection">
+        <div class="heading-education">
+            <h3>Education</h3>
+            <p>Currently I am pursuing B-tech in Information Technology at  Malwa Institute of Science and Technology,Indore.</p>
+        </div>
+        <div id="education">
+            <div class="box" id="box1">
+                <i class="fa-solid fa-3x fa-graduation-cap"></i>
+                <h4>Bachelor's Degree</h4>
+                <span class="underline"></span>
+                <p>Information Technology</p>
+                <p>Malwa Institute of Science and Technology, Indore</p>
+            </div>
+            <div class="box" id="box2">
+                <i class="fa-solid fa-3x fa-building-columns"></i>
+                <h4>Higher Secondary School Certificate</h4>
+                <span class="underline"></span>
+                <p>Physics, Chemistry, Maths</p>
+                <p>Govt. School For Excellence Ujjain, Madhya Pradesh</p>
+            </div>
+            <div class="box" id="box3">
+                <i class="fa-solid fa-3x fa-school"></i>
+                <h4>Secondary School Certificate</h4>
+                <span class="underline"></span>
+                <p>English Medium</p>
+                <p>Govt. School For Excellence Ujjain, Madhya Pradesh.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- skills -->
+    <section id="fourthSection">
+        <div class="heading-skills">
+            <h3>Skills</h3>
+            <p>Learning new skills to build myself to the next level.</p>
+        </div>
+        <div id="skills">
+            <div class="html-logo skill_box"><img src="images/html_logo.png" alt="HTML"></a></div>
+            <div class="css-logo skill_box"><img src="images/css_logo.png" alt="CSS"></div>
+            <div class="js-logo skill_box"><img src="images/javascript_logo.png" alt="JavaScript"></div>
+            <div class="React skill_box"><img src="images/th.jpg" alt="React"></div>
+            <div class="py-logo skill_box"><img src="images/python_logo.png" alt="Python"></div>
+        </div>
+    </section>
+
+    <!-- certificate -->
+    <section id="certification">
+        <div class="heading-certification">
+            <h3>Certification</h3>
+            <p>Certification helps to build and gain deep knowledge about a course.</p>
+        </div>
+        <div class="newcontainer">
+            <div class="newbox1">
+                <img src="images/unizztech.png" alt="unizztech">
+            </div>
+            <div class="newbox2">
+                <h3>UnizzTech</h3>
+                <p>Issued on November 30,2024</p>
+                <p> Credential ID n191uT8f73278ek2N6</p>
+                <a href="images/unizzcertificate.pdf" target="_blank">
+                    <button class="btn">Show credential<i class="fa-solid fa-link"></i></button>
+                </a>
+            </div>
+        </div>
+        <div class="newcontainer">
+            <div class="newbox1">
+                <img src="images/Acmegrade.jpg" alt="Acmegrade">
+            </div>
+            <div class="newbox2">
+                <h3>Web development training</h3>
+                <p>Issued on Dec 2023</p>
+                <p>Credential ID NPTEL23CS44S53140470</p>
+                <a href="images/acmecertificate.pdf" target="_blank">
+                    <button class="btn">Show credential<i class="fa-solid fa-link"></i></button></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- project -->
+    <section id="sixthSection">
+        <div class="heading-projects">
+            <h1>Project</h1>
+            <h2>Youtube Transcript Summerizer</h2>
+             <p>The YouTube Transcript Summarizer project aims to develop a web-based application that generates concise summaries of YouTube video transcripts. The project uses HTML ,CSS ,JS which creates a user friendly interface and a lightweight Python web framework for the backend to handle summarization processes.</p>
+             <button class="github-button">
+                <a href="https://github.com/karishmatatwal05/youtube-transcript-summarizer-.git" target="_blank">GitHub</a>
+            </button>
+        </div> 
+        </div>
+
+        <div class="projects">
+            <div class="project1">
+                <img src="images/yts1.jpeg" >
+                </div>
+            <div class="project2">
+                <img src="images/yts2.jpeg"  >
+                </div>
+            <div class="project3">
+                <img src="images/yts3.png"  >
+                </div>
+            </div>
+
+            <div class="heading-projects">
+                <h2>E-Commerse Website</h2>
+                 <p>I have developed a fully responsive E-Commerce Website using HTML, CSS, and JavaScript, focusing on a clothing store. The website includes a product listing with features to open individual product pages and a payment options section. It also features a well-designed header, home page, clothing categories, customer reviews, contact section, and footer, ensuring a smooth user experience.</p>
+                 <button class="github-button">
+                    <a href="https://github.com/karishmatatwal05/E-Commerce-Website" target="_blank">GitHub</a>
+                </button>
+                <button class="github-button">
+                    <a href="https://karishmatatwal05.github.io/E-Commerce-Website/" target="_blank">Live Demo</a>
+                </button>
+            </div> 
+            </div>
+    
+            <div class="projects">
+                <div class="project1">
+                    <img src="images/e-commerse1.png" >
+                    </div>
+                <div class="project2">
+                    <img src="images/e-commerse2.png"  >
+                    </div>
+                <div class="project3">
+                    <img src="images/e-commerse3.png"  >
+                    </div>
+                </div>
+    </section>
+    
+
+    <!-- contact me -->
+    <section id="seventhSection">
+        <div class="heading-contact">
+            <h3>Contact Me</h3>
+            <p>If you have any query then please feel free to contact me from the below details.</p>
+        </div>
+        <div class="contact">
+            <div class="address details">
+                <a href="https://www.google.com/maps"
+                    target="_blank">
+                    <div class="box-circle"><i class="fa-solid fa-location-dot"></i></div>
+                </a>
+                <h4>Address</h4>
+                <p>Ujjain, Madhya Pradesh</p>
+            </div>
+            <div class="email-address details">
+                <a href="mailto:rajputhimani755@gmail.com" target="_blank">
+                    <div class="box-circle"><i class="fa-solid fa-envelope"></i></div>
+                </a>
+                <h4>Email Address</h4>
+                <p>karishmatatwal2002@gmail.com</p>
+            </div>
+            <div class="github details">
+                <a href="https://github.com/rajput3006" target="_blank">
+                    <div class="box-circle"><i class="fa-brands fa-square-github"></i></div>
+                </a>
+                <h4>Github</h4>
+                <p>https://github.com/karishmatatwal05</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact section -->
+    <section class="eightSection">
+        <div class="left">
+        </div>
+        <div class="right">
+            <form name="google-sheet" method="post">
+                <div class="name">
+                    <input type="text" name="Name" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="email">
+                    <input type="email" name="Email" id="email" placeholder="Your Email" required>
+                </div>
+                <div class="subject">
+                    <input type="text" name="Subject" id="name" placeholder="Subject" required>
+                </div>
+                <div class="message" required>
+                    <textarea name="Message" id="message" cols="20" rows="7" placeholder="Message"></textarea>
+                </div>
+                <div class="submit" name="submit">
+                    <button class="btn">Send Message</button>
+                </div>
+            </form>
+            <span id="msg"></span>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h3>About</h3>
+                    <p>Thank you for visiting my portfolio! I truly appreciate your time and interest in my work.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#thirdSection">Education</a></li>
+                        <li><a href="#fourthSection">Skills</a></li>
+                        <li><a href="#fifthSection">Certifications</a></li>
+                        <li><a href="#sixthSection">Projects</a></li>
+                        <li><a href="#seventhSection">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Have a Questions?</h3>
+                    <p><i class="fa-solid fa-location-dot"></i>
+                      Ujjain, Madhya Pradesh</p>
+                    <p class="email-id"><i class="fa-solid fa-envelope"></i>karishmatatwal2002@gmail.com</p>
+                </div>
+            </div>
+        </div>
+        <div class="follow">
+            <h3 style="color:white;">Follow me</h3>
+            <a href="https://www.linkedin.com/in/karishma-tatwal05" target="_blank"><i
+                    class="fa-brands fa-linkedin"></i></a>
+            <a href="https://twitter.com" target="_blank"><i
+                    class="fa-brands fa-square-twitter"></i></a>
+            <a href="https://github.com/karishmatatwal05" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+            <a href="https://www.instagram.com" target="_blank"><i
+                    class="fa-brands fa-square-instagram"></i></a>
+            <h4>Copyright &copy; 2025  
+                Made with &#x2661; by Karishma Tatwal
+                <br> <span> All right reserved!</span></h4>
+        </div>
+    </footer>
+    
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- google sheet -->
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycby4gwtU1SlP4q-HUN5MUbqB8dAqEuV1W_zlPFUqXhWUfqznvwoZSKlnIGuFjqCOTL8y/exec'
+        const form = document.forms['google-sheet']
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => alert("Thanks for Contacting! I Will Contact You Soon..."))
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
