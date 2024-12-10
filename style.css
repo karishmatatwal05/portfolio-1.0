@@ -1,0 +1,884 @@
+/* Default Reset */
+*{
+    margin:0;
+    padding:0;
+    user-select: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}      
+html{
+    scroll-behavior:smooth;
+}             
+body{
+    background-color: #080808;
+    color: #fff;
+}
+                        
+/*------------------Navigation Bar-----------------------*/
+                          
+nav{
+    display:flex;
+    justify-content: space-evenly;
+    align-items:center;
+    background-color: black;
+    color: white;
+    position:sticky;
+    top:0;
+    right:0;
+    width:100%;
+    height:60px;
+    z-index: 1;
+}
+/* Navigation Bar - List and Styling */
+nav ul{
+    font-size: 1.01rem;
+}
+nav ul li{
+    display:inline-block;
+    list-style:none;
+    margin:20px;
+    }
+nav ul li a{
+     text-decoration:none;
+    color:white;
+}
+nav ul li a:hover{
+    color:lightgray;
+}                    
+nav .toggle-bar i{
+    font-size:1.5rem;
+    cursor:pointer;
+    display:none;
+    color: #ccc;
+ }
+ nav .items{
+    padding-left: 20px;
+    text-align: left;
+    font-size: larger;
+ }
+
+ /*------------------ DropDown Menu ----------------  */
+nav .fas{
+    display:none;
+}
+                          
+/* ---------------Home Section--------------------*/
+       
+#home .container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    width: 100%;
+    height: 80vh;
+    margin-bottom:10px;
+}
+                          
+.container .first-para{ 
+    font-size:16px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    color:white;
+}
+.container .main-heading{
+    font-size:4rem;
+    font-weight: 900;
+    font-family: 'Sorts Mill Goudy', serif;
+    letter-spacing: 2px;
+    text-transform:uppercase;
+}    
+.container .second-para{
+    font-size: 25px;
+    font-weight:bold;
+}
+.second-para #element{
+    color:red;
+    text-decoration: none;
+}
+
+ /*--------------------About Section-----------------*/
+ #about{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap:wrap;
+    padding-top:80px;
+}            
+ #about .leftSection{
+    flex-basis:30%;
+ }              
+#about .rightSection{
+    flex-basis: 50%;
+    padding: 20px;
+}                  
+#about .rightSection h3{
+    font-size: 2.3rem;
+    margin-bottom: 20px;
+    padding:6px;
+}
+#about .rightSection .my-desc{
+    margin-bottom: 15px;
+    color:white;
+}
+#about .rightSection p{
+    padding: 6px;
+    font-size: 16px;
+}
+#about .rightSection .desc{
+    font-weight:bold;
+    color: rgb(255, 62, 62);
+}
+#about .rightSection .desc span{
+    font-weight:normal;
+    color:white;
+}
+#about .rightSection .desc .name{
+    margin-left: 80px;
+}
+#about .rightSection .desc .dob{
+    margin-left: 29px;
+}
+#about .rightSection .desc .address{
+   margin-left: 62px;
+}
+#about .rightSection .desc .pincode{
+    margin-left: 58px;
+}
+#about .rightSection .desc .email{
+    margin-left: 74px;
+}
+#about .rightSection .desc .phone{
+    margin-left: 68px;
+ }
+#about .rightSection h4{
+    padding: 6px;
+}
+#about .rightSection .resume-btn{
+    border: none;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    padding: 0.5rem 1rem;
+    box-shadow: 0.3rem 0.6rem 1rem rgb(0 0 0 / 23%);
+    cursor: pointer;
+    background-color:rgb(245, 50, 50);
+    color: white;
+}                     
+#about .rightSection .resume-btn:hover{
+    background-color:red;
+    color: black;
+    transform: translateY(-3%);
+} 
+#about .rightSection .resume-btn a{
+    text-decoration:none;
+    color:white;
+    font-family:'Sorts Mill Goudy', serif;
+}
+                                              
+/* Center the button */
+#about .rightSection .resume-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem; /*Adjust spacing above the button */
+    position: relative; /* Ensures the button stays within this container */
+}
+/* Button styling */
+#about .rightSection .resume-btn {
+    border: none;
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    box-shadow: 0.3rem 0.6rem 1rem rgb(0 0 0 / 23%);
+    cursor: pointer;
+    background-color: rgb(245, 32, 32);
+    color: white;
+    font-size: 1rem;
+    font-weight: normal;
+    display: flex; /* Ensures internal alignment */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#about .rightSection .resume-btn a {
+    text-decoration: none;
+    /* background-color: red; */
+    /* color:white;  */
+}
+#about .rightSection .resume-btn a :hover{
+    text-decoration: none;
+    background-color:red;
+    color: black;
+}
+
+
+ /*-------------------Education Section-------------------------*/        
+.heading-education{
+    text-align:center;
+    margin-bottom: 20px;
+}
+.heading-education h3{
+    font-size:2.3rem;
+     margin-bottom:10px;
+}                   
+ #thirdSection{
+    padding-top:80px;
+ }
+ #education div h4{
+    font-size:1.2rem;
+    margin:10px 0px;
+    text-align:center;
+}
+#thirdSection > p{
+    text-align: center;
+}
+#education .box i{
+    color:white;
+}
+#education{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+#education .box{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width:30%;
+    height:300px;
+    margin: 20px;
+    padding: 3em;
+    transition: .1s background-color ease-in;
+    flex-basis:30%;
+    cursor: pointer;
+}
+#education .box:hover{
+    transform: translateY(-3%)
+}
+#education .box p{
+    padding: 6px;
+    text-align:center;
+}
+#education .box .underline{
+    width: 60px;
+    border:1.5px solid white;
+    background-color: white;
+    margin-bottom: 13px;
+    background-color: white;
+}
+#box1{
+    background-image: url("images/geca_img.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:white;
+}
+#box2{
+    background-image: url("images/db_img.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:white;
+}
+#box3{
+    background-image: url("images/school_img.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:white;
+}
+   /*------------------------Skills Section---------------------------*/
+#fourthSection{               
+    padding-top:80px;
+    padding-bottom: 15px;
+}
+.heading-skills{
+    text-align:center;
+    margin-bottom: 20px;
+}
+.heading-skills h3{
+    font-size:2.4rem;
+    margin-bottom:10px;
+}
+.fourthSection > p{
+   text-align: center;
+}           
+#skills{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    flex-wrap:wrap;
+    height:100%;
+}     
+#skills img{
+    margin:5px;
+    padding:20px;
+    height:150px;
+    width:150px;
+    cursor: pointer;
+}
+#skills img:hover{
+   transform: translateY(-3%)
+}
+#skills .hacking-logo img{
+    height:300px;
+    width:300px;
+}
+                          
+#skills .hacking-logo h2{
+    text-align:center;
+    margin-bottom:50px;
+}
+#skills .skill_box{
+    margin:10px;
+    background-color: #f1f4fb;
+    border-radius:8px;
+ }
+
+ /*-----------------------------Certification Section--------------------------*/
+                          
+#certification{
+    padding-top:60px;
+}
+.heading-certification{
+    text-align:center;
+    margin-bottom: 20px;
+}
+.heading-certification h3{
+    font-size:2.3rem;
+    margin-bottom:10px;
+}
+#certification .newcontainer a .btn{
+    padding:15px;
+    margin-top:15px;
+    width:150px;
+    font-size:0.8rem;
+    cursor:pointer;
+    border-radius:15px;
+    font-weight: bold;
+    border:none;
+    background-color: white;
+}
+#certification .newcontainer a .btn:hover{
+    transform: translateY(-3%);
+    background-color: rgb(204, 197, 197);
+}
+                          
+#certification .newcontainer a .btn i{
+    margin-left:5px;
+}
+#certification .newcontainer{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d8e4ff;
+    padding:20px;
+    width:60%;
+    margin:auto;
+    border-radius:8px;
+    margin-top:30px;
+    color:black;
+    cursor: pointer;
+}
+#certification .newcontainer:hover{
+    transform: translateY(-3%)
+}
+#certification .newcontainer .newbox1{
+    margin:50px;
+}
+#certification .newcontainer .newbox2{
+    margin:6px;
+    flex-basis:40%;
+}
+#certification .newcontainer .newbox1 img{
+   width:80px;
+   height:80px;
+}
+
+/* project */
+.heading-projects{
+    text-align:center;
+    margin-bottom: 20px;
+}
+.heading-projects h1{
+    font-size:50px;
+    margin-bottom:10px;
+    margin-top:200px;
+}
+.heading-projects h2{
+    font-size:20px;
+    margin-bottom:10px;
+    margin-top:20px;
+}
+.heading-projects p{
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+.projects{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+ }                     
+.projects .project1, .project2, .project3 {
+    padding: 8px;;
+ }
+.projects .project1:hover,.project2:hover,.project3:hover{
+    transform: translateY(-3%)
+}
+/* Default styling */
+.projects {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping of items if there's insufficient space */
+    justify-content: center; /* Centers the projects */
+    gap: 20px; /* Adds spacing between the project divs */
+}
+.projects div {
+    flex: 1 1 30%; /* Flex-grow, flex-shrink, and basis to make divs responsive */
+    max-width: 30%; /* Limits the width of each project container */
+    text-align: center; /* Centers images inside the divs */
+}
+.projects img {
+    width: 100%; /* Makes the image fully responsive to its container */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 10px; /* Optional: Adds rounded corners to the images */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Adds a subtle shadow */
+}
+
+/* project github button */
+.github-button {
+    padding-top:10px  ;
+    background-color:rgb(244, 36, 36);
+    border: none; /* Removes border */
+    padding: 12px 20px; /* Adds padding */
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+    transition: all 0.3s ease; /* Smooth transition effect */
+    display: inline-block; /* Ensures proper alignment */
+}
+.github-button a {
+    padding-top:10px ;
+    text-decoration: none; /* Removes underline from the link */
+    color: white; /* Text color */
+    font-size: 14px; /* Font size */
+    font-weight: normal; /* Bold text */
+}
+.github-button:hover {
+    background-color: rgb(249, 51, 51); /* Darker green on hover */
+    color: white;
+}
+.github-button a:hover {
+    text-decoration: none; /* Optional: underline the text on hover */
+}
+/* Responsive styling for smaller screens */
+@media (max-width: 768px) {
+    .projects div {
+        flex: 1 1 45%; /* Adjusts to show two items per row on medium screens */
+        max-width: 45%;
+    }
+}
+
+@media (max-width: 497px) {
+    .projects {
+        flex-direction: column; /* Stacks the project divs vertically */
+        align-items: center; /* Centers the stacked items */
+    }
+    .projects div {
+        flex: 1 1 100%; /* Each project takes full width on small screens */
+        max-width: 100%;
+    }
+    .projects img {
+        padding: 10px; /* Adds some space around the images */
+    }
+}
+
+/* contact section */
+#seventhSection{
+    padding-top:180px;
+}
+.heading-contact{
+    text-align:center;
+    margin-bottom:40px;
+}
+.heading-contact h3{
+    font-size:2.3rem;
+}
+#seventhSection .contact{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}                 
+#seventhSection .contact i{
+    font-size:30px;
+    color:white;
+}                 
+#seventhSection .contact .details .box-circle{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(111, 111, 253);
+    width: 50px;
+    padding: 25px;
+    height: 50px;
+    border-radius: 50%;
+     margin-bottom:20px;
+    cursor: pointer;
+}
+#seventhSection .contact .details .box-circle:hover{
+    transform: translateY(-3%)
+}
+#seventhSection .contact .details{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap:wrap;
+    flex-basis:20%;
+    margin-top:15px;
+    width:30%;
+    height:30vh;
+    text-align: center;
+    padding:15px;
+    position:static
+}
+#seventhSection .contact .details :hover{
+    transform: translateY(-3%)
+}
+
+/*--------------------------------Form Section----------------------------*/            
+.eightSection{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    margin-top: 100px;
+}
+.eightSection .left, .right {
+    margin: 20px;
+}
+.eightSection .left img{
+    height: 600px;
+}
+.eightSection .right input{
+    padding:10px;
+    margin: 10px;
+    width: 26vw;
+    height: 5vh;
+    font-size:1rem;
+}
+.eightSection .right textarea{
+    padding:10px;
+    margin: 10px;
+    width: 26vw;
+    font-size:1rem;
+    border:1px solid black;
+    font-family: "Poppins", Arial, sans-serif;
+}
+.eightSection .right .submit .btn{
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    background-color:red;        
+    color: white;                      
+}
+.eightSection .right .submit .btn:hover{
+    background-color:white;
+    color: black;
+    transform: translateY(-3%);
+} 
+
+/*---------------------------------Footer Section-----------------------------*/
+.row{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    align-items: flex-start; 
+    width:85%;
+    margin:auto;
+}
+footer{
+    background-color: rgb(29, 27, 27);
+    padding-top:70px;
+    padding-bottom: 20px;
+    color:#ffffff;
+}
+.footer-col{
+    flex-basis:25%;
+    padding: 0 15px;
+}
+.footer-col:nth-child(2),.col:nth-child(3){
+    flex-basis:15%;
+}
+.footer-col h3{
+    font-size:18px;
+    color:white;
+    text-transform:capitalize;
+    margin-bottom:30px;
+}
+.email-id{
+    width:fit-content;
+    border-bottom:1px solid #ccc;
+    margin:20px 0;
+}
+.footer-col ul li:note(:last-child){
+     margin-bottom:10px;
+}
+.footer-col ul li a{
+    font-size:16px;
+    text-transform:capitalize;
+    color:#ffffff;
+    text-decoration:none;
+    font-weight:300;
+    display:block;
+    transition:all 0.3s ease;
+    cursor:pointer;
+}
+.footer-col ul li a:hover{
+    color:#ffffff;
+    padding-left:10px;
+}
+.footer-col div a{
+    font-size:16px;
+    text-transform:capitalize;
+    color:#ffffff;
+    text-decoration:none;
+    font-weight:300;
+    display:block;
+    transition:all 0.3s ease;
+    cursor:pointer;
+}
+.footer-col div a:hover{
+    color:#ffffff;
+    padding-left:10px;
+}
+                          
+.footer-col a img{
+    height: 20px;
+    width: 20px;
+}
+.footer-col div a p{
+    display:inline-block;
+    padding:7px;
+}
+.footer-col i{
+    margin-right:10px;
+}
+#footer .follow{
+    font-size:1rem;
+    text-align:center;
+    padding-top: 60px;
+}                      
+#footer .follow i{
+    font-size: 3rem;
+    margin: 10px;
+    color:white;
+}
+#footer .follow i:hover{
+    background-color: rgb(122, 114, 114);   
+    transform: translateY(-3%);
+}
+
+/*----------------------------------Utility Classes-------------------------------*/
+#element{
+    text-decoration:underline;
+     /* color:rgb(3, 134, 3); */
+    color:rgb(111, 111, 253);
+    overflow:hidden;
+}
+ul{
+    list-style:none;
+}
+a{
+    text-decoration:none;
+}
+                          
+/*--------------------------------Media Query-----------------------------------------*/
+                          
+@media (max-width:860px){
+    nav ul li{
+            display:none;
+    }
+    nav .toggle-bar i{
+            display:block;
+    }
+    .dropdown_menu{
+            display:block;
+    }                            
+    .container .main-heading{
+        font-size:2.2rem;
+    }
+    #about .rightSection{
+        flex-basis:80%;
+    }
+}
+
+@media (max-width:850px){
+    nav .fas{
+        display:block;
+        font-size:25px;
+    }
+    nav ul{
+        /* background:rgb(80, 212, 98); */
+        background:rgb(29, 29, 29);
+        color:white;
+        position:fixed;
+        top:0px;
+        right:-200px;
+        width:200px;
+        height:360px;
+        padding-top:50px;
+        z-index:2;
+        transition:right 0.5s;
+        overflow:hidden;
+    }
+    nav ul li{
+        display:block;
+        margin:25px;
+    }
+    nav ul .fas{
+        position:absolute;
+        top:25px;
+        left:25px;
+        cursor:pointer;
+    }
+    #about .rightSection .btn{
+        width:100px;
+    }
+}
+@media(max-width:970px){
+    footer{
+        bottom:unfit;
+    }
+    .footer-col{
+        flex-basis:100%;
+    }
+    .footer-col:nth-child(2),.footer-col:nth-child(3){
+        flex-basis:100%;
+     }
+    .footer-col h3{
+        margin:20px;
+        margin-bottom:6px;
+    }
+}
+                          
+@media (max-width:430px){
+    .container .main-heading{
+        font-size:2rem;
+    }
+    #about .rightSection h3{
+        font-size:2rem;
+    }
+    #about .rightSection .desc .name{
+        margin:0;
+        margin-left:4px;
+    }
+    #about .rightSection .desc .dob{
+        margin:0;
+        margin-left:4px;
+    }
+    #about .rightSection .desc .address{
+        margin:0;
+        margin-left:4px;
+    }
+    #about .rightSection .desc .pincode{
+        margin:0;
+        margin-left:4px;
+    }
+    #about .rightSection .desc .email{
+        margin:0;
+        margin-left:4px;
+    }
+    #about .rightSection .desc .phone{
+        margin:0;
+        margin-left:4px;
+    }
+    #about .rightSection p{
+        font-size:12px;
+    }
+    #certification .cert-col a .btn{
+        width:60vw;
+        font-size:0.7rem;
+    }
+    #skills .hacking-logo img{
+        height:270px;
+        width:250px;
+    }
+    #seventhSection .website p{
+        font-size:0.7rem;
+    }
+    .container .second-para{
+        font-size:1.3rem;
+    }
+}
+@media (max-width:497px){
+    #seventhSection .email-address p{
+        font-size:0.7rem;
+    }
+    #skills img{
+        margin:5px;
+        padding:20px;
+        height:100px;
+        width:100px;
+    }
+    #certification .newcontainer{
+        flex-direction: column;
+    }
+}
+                          
+ @media (max-width:370px){
+    #certification .cert-col{
+        padding:6px;
+        font-size:0.7rem;
+    } 
+    .footer-col .email-id{
+        font-size:0.8rem;
+    }
+                          
+    .container .main-heading{
+        font-size:1.3rem;
+    }
+    .container .first-para{
+       font-size:1rem;
+    }
+    .container .second-para{
+       font-size:1rem;
+   }
+    #about .rightSection{
+       flex-basis:40%;
+       width:80%;
+    }
+    #about .rightSection .desc .name{
+        margin:0;
+        margin-left:4px;
+     }
+    #about .rightSection .desc .dob{
+        margin:0;
+        margin-left:4px;
+     }
+    #about .rightSection .desc .address{
+        margin:0;
+        margin-left:4px;
+    }
+     #about .rightSection .desc .pincode{
+        margin:0;
+        margin-left:4px;
+    }
+    #about .rightSection .desc .email{
+        margin:0;
+        margin-left:4px;
+    }
+    #about .rightSection .desc .phone{
+        margin:0;
+        margin-left:4px;
+    }
+    #about .rightSection .btn{
+        font-size:0.8rem;
+    }
+}
+
+
+  
+
+  
